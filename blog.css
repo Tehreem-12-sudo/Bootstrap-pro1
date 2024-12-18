@@ -82,6 +82,60 @@ html, body {
     left: 30%;
     position: relative;
   }
+  .navbar-toggler {
+    color: gray!important;
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 16px; /* Font size for "Menu" */
+    font-weight: bold; /* Bold text */
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  .navbar-toggler:hover {
+    color: red; /* Hover effect */
+  } 
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: black; /* White background for dropdown */
+      position: absolute; /* Position over content */
+      top: 50px; /* Adjust as needed */
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Ensure it is above other content */
+      padding: 20px; /* Space inside the box */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
+      min-height: 200px; /* Adjust height of the box */
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 10px 0; /* Space between items */
+    }
+  
+    .navbar-nav .nav-link {
+      color:white!important; /* Text color */
+      font-size: 18px; /* Font size */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      color: red !important; /* Hover effect */
+    }
+  
+    .navbar-toggler {
+      background-color: black; /* Black menu button */
+      color: white; /* White text */
+      border: 2px solid white; /* Optional: Border around the button */
+      font-size: 16px; /* Font size */
+      padding: 5px 10px; /* Padding for the button */
+    }
+  }
   /*2nd div*/
   .blog-2{
     width: 100%;
