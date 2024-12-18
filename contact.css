@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+  
+  }
+  .Contact {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 700px; /* Adjust the height of the div as needed */
+    width: 100%; /* Sets the div to span the full width of the page */
+    
+}
+.contact-text {
+    position: absolute;
+    top:50%; /* Distance from the bottom of the div */
+    left: 28%; /* Position 30% from the left */
+    font-family: Arial, sans-serif; /* Choose a clean font */
+    font-size: 18px; /* Adjust the text size */
+    color: gray; /* Default color for text */
+  }
+  
+  .separator {
+    color: red; /* Red color for the ">" */
+    margin: 0 5px; /* Space around the separator */
+  }
+  .contacth{
+    position: absolute;
+    color:white;
+    top:55%;
+    left:28%;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    background-color: transparent; /* Transparent background for the navbar */
+  }
+  .navbar-brand{
+    font-weight: bold !important; 
+    top: 20px;
+    position: fixed !important;
+    color:red !important;
+    padding-left: 20%;
+  }
+  .item{
+    top: 20px;
+    position: fixed;
+   padding-left: 50%;
+  }
+  .item-1{
+    color:gray !important;
+    
+
+  }
+  .item-1:hover{
+    color:red!important;
+    
+
+  }
+  .contact-text{
+    
+    position: relative;
+    top: 50%;
+    left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: gray;
+    
+  }
+  .contacth{
+    left: 30%;
+    position: relative;
+  }
+  /*2nd div*/
+  .Contact-2 {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    clip-path: polygon(0% 0%, 70% 10%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align content horizontally in center */
+    justify-content: flex-start; /* Align content to the top */
+    position: relative;
+    padding-top: 200px; /* Increased space from the top */
+    z-index: 10;
+    text-align: center; /* Center the text horizontally */
+}
+@media (max-width: 768px) {
+  .Contact-2 {
+    
+    height: 1200px;
+    /* Adjusted height for small screens only */
+  }
+}
+
+.contact-heading {
+    color: red; /* Red color for 'Contact us' */
+    font-size: 14px; /* Small font size */
+    margin: 0; /* Remove margin */
+}
+
+.project-heading {
+    color: black; /* Black color */
+    font-size: 32px; /* Larger font size for bold heading */
+    font-weight: bold; /* Bold text */
+    margin: 10px 0; /* Add space around the heading */
+}
+
+.contact-textt {
+    color: gray; /* Gray color for paragraph text */
+    font-size: 16px; /* Standard font size */
+    line-height: 1.5; /* Improve readability */
+    max-width: 600px; /* Limit text width for better appearance */
+    margin: 10px auto 0; /* Center horizontally */
+}
+.footer {
+  height: 600px;
+  background-color: black; 
+  clip-path: polygon(0% 0%, 70% 20%, 100% 5%, 100% 100%, 0% 100%); /* V-shape effect */
+  position: relative; /* Important for z-index */
+  color: white; /* Text color */
+  padding-top: 200px;
+  margin-top: -100px; /* Move footer upward */
+  z-index: 10; /* Ensures footer stays above other elements */
+}
+
+
+
+.footer .container {
+  max-width: 1200px; /* Adjust based on your design */
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer .list-unstyled li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+  color: #fff;
+}
+
+.text-light {
+  color: #ccc !important; /* Ensure footer text stays light */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red; /* Heart color */
+}
+@media (max-width: 767px) {
+  .footer {
+      
+    height: auto;
+    padding-top: 100px;
+    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+     /* Allow the div height to adjust on small screens */
+     /* Reset margin-top to avoid overlap */
+  }
+
+  
+
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer h5 {
+    font-size: 16px;
+  }
+
+  .footer .list-unstyled li a {
+    font-size: 14px;
+  }
+
+  .footer .row {
+    text-align: center; /* Center footer content on smaller screens */
+  }
+
+  .footer .col-lg-3, .footer .col-md-6 {
+    margin-bottom: 20px;
+  }
+}

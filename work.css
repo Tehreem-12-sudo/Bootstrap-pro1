@@ -1,0 +1,283 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+  
+  }
+  .Work-1 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 700px; /* Adjust the height of the div as needed */
+    width: 100%; /* Sets the div to span the full width of the page */
+    
+}
+.work-text {
+    position: absolute;
+    top:50%; /* Distance from the bottom of the div */
+    left: 28%; /* Position 30% from the left */
+    font-family: Arial, sans-serif; /* Choose a clean font */
+    font-size: 18px; /* Adjust the text size */
+    color: gray; /* Default color for text */
+  }
+  
+  .separator {
+    color: red; /* Red color for the ">" */
+    margin: 0 5px; /* Space around the separator */
+  }
+  .workh{
+    position: absolute;
+    color:white;
+    top:55%;
+    left:28%;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    background-color: transparent; /* Transparent background for the navbar */
+  }
+  .navbar-brand{
+    font-weight: bold !important; 
+    top: 20px;
+    position: fixed !important;
+    color:red !important;
+    padding-left: 20%;
+  }
+  .item{
+    top: 20px;
+    position: fixed;
+   padding-left: 50%;
+  }
+  .item-1{
+    color:gray !important;
+    
+
+  }
+  .item-1:hover{
+    color:red!important;
+    
+
+  }
+  .work-text{
+    
+    position: relative;
+    top: 50%;
+    left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: gray;
+    
+  }
+  .workh{
+    left: 30%;
+    position: relative;
+  }
+  /*2nd div*/
+  .Work-2{
+    width: 100%;
+    height: 4000px;
+    background-color: #f4f4f4;
+    clip-path: polygon(0% 0%, 70% 5%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 300px;
+    z-index: 10;
+    }
+    .Work-2 h2 {
+        margin-top: 80px;
+        font-size: 55px;
+        color: #000;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+        font-weight: bolder;
+      }
+      .image-container img {
+        width: 80%;
+        height: 40%;
+        border-radius: 10px;
+      }
+      
+      .text-content h3 {
+        font-size: 50px;
+        margin-bottom: 15px;
+      }
+      
+      .text-content p {
+        color: #6c757d;
+        margin-bottom: 20px;
+        max-width: 80%;
+      }
+      
+      .author-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .author-info img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      
+      .author-info .details {
+        font-size: 14px;
+        color: #6c757d;
+      }
+      
+      .btn-view {
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      
+      .btn-view:hover {
+        background-color: #0056b3;
+      }
+      .row.align-items-center.mb-5 > [class*="col-"] {
+        padding-left: 10px; /* Adjust as needed */
+        padding-right: 10px; /* Adjust as needed */
+      }
+      @media (max-width: 768px) {
+        .Work-2 {
+          clip-path: polygon(0 2%, 35% 0, 100% 2%, 100% 100%, 0 100%);
+          width: 100vw; /* Full screen width */
+          height: 50px; /* Adjust height as needed */
+           /* Ensures image doesn’t overflow outside the div */
+        }
+        .image-container img {
+          width: 100%; /* Full width of the container */
+          height: auto; /* Maintain aspect ratio */
+        }
+      
+        .row.align-items-center.mb-5 {
+          flex-wrap: wrap; /* Ensures content stacks properly if space is limited */
+        }
+      
+        .col-md-6 {
+          width: 100%; /* Full width for each column on small screens */
+          text-align: center; /* Center-align text for better appearance */
+        }
+      
+        .text-content h3 {
+          font-size: 24px; /* Reduce heading size for smaller screens */
+        }
+      
+        .text-content p {
+          max-width: 90%; /* Ensure text doesn't overflow */
+          margin: 0 auto; /* Center-align text */
+        }
+      }
+      @media (max-width: 484px) {
+        .image-container img {
+          width: 100%; /* Image takes full width of the container */
+          height: auto; /* Maintain aspect ratio */
+        }
+      
+        .row.align-items-center.mb-5 {
+          flex-wrap: wrap; /* Stack items if needed */
+        }
+      
+        .col-md-6 {
+          width: 100%; /* Ensure full width for columns */
+          text-align: center; /* Center text for better display */
+        }
+      
+        .Work-2 {
+          height: 4100px; /* Automatically adjust height */
+          overflow: visible; /* Ensure content is not clipped */
+        }
+      }
+      .footer {
+        height: 600px;
+        background-color: black; 
+        clip-path: polygon(0% 0%, 70% 20%, 100% 5%, 100% 100%, 0% 100%); /* V-shape effect */
+        position: relative; /* Important for z-index */
+        color: white; /* Text color */
+        padding-top: 200px;
+        margin-top: -100px; /* Move footer upward */
+        z-index: 10; /* Ensures footer stays above other elements */
+}
+
+
+      
+      .footer .container {
+        max-width: 1200px; /* Adjust based on your design */
+      }
+      
+      .footer h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      
+      .footer .list-unstyled li a {
+        color: #ddd;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .footer .list-unstyled li a:hover {
+        color: #fff;
+      }
+      
+      .text-light {
+        color: #ccc !important; /* Ensure footer text stays light */
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      .text-danger {
+        color: red; /* Heart color */
+      }
+      @media (max-width: 767px) {
+        .footer {
+          height: auto;
+          padding-top: 100px;
+          clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+           /* Allow the div height to adjust on small screens */
+           /* Reset margin-top to avoid overlap */
+        }
+      
+        
+      
+        .footer .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      
+        .footer h5 {
+          font-size: 16px;
+        }
+      
+        .footer .list-unstyled li a {
+          font-size: 14px;
+        }
+      
+        .footer .row {
+          text-align: center; /* Center footer content on smaller screens */
+        }
+      
+        .footer .col-lg-3, .footer .col-md-6 {
+          margin-bottom: 20px;
+        }
+      }
+      

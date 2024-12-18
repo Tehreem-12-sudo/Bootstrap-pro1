@@ -1,0 +1,876 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+  
+  }
+  .banner {
+    min-height:760px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: imageSlider 20s linear infinite;
+    overflow: hidden;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    background-color: transparent; /* Transparent background for the navbar */
+  }
+  .navbar-brand{
+    font-weight: bold !important; 
+    top: 20px;
+    position: fixed !important;
+    color:red !important;
+    padding-left: 20%;
+  }
+  .item{
+    top: 20px;
+    position: fixed;
+   padding-left: 50%;
+  }
+  .item-1{
+    color:gray !important;
+    
+
+  }
+  .item-1:hover{
+    color:red!important;
+    
+
+  }
+  @keyframes imageSlider {
+    0%, 50% { 
+      background-image: url('https://preview.colorlib.com/theme/avo/images/bg_1.jpg');
+    }
+    50.01%, 100% { 
+      background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    }
+  }
+  .subtitle {
+    font-weight: bold; 
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 2px 10px #000;
+    max-width: 24%;
+  }
+  .banner p {
+    font-weight: bold; 
+    position: absolute;
+    top: 40%;
+    left: 29%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #808080;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 22%;
+  }
+  .toggle-button {
+    background-color: rgb(223, 45, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 24%;
+    top: 54%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: 767px) {
+    .subtitle, .banner p, .toggle-button {
+      left: 5%; /* Move all elements to the left side */
+      transform: translateX(0); /* Remove the centering transform */
+      max-width: 90%; /* Adjust max-width as needed */
+    }
+  
+    /* Adjust subtitle font size for small screens */
+    .subtitle {
+      top: 30%;
+      font-size: 30px; /* Smaller font size for smaller screens */
+    }
+  
+    /* Adjust paragraph font size for small screens */
+    .banner p {
+      font-size: 16px;
+      max-width: 100%; /* Smaller font size for smaller screens */
+    }
+  
+    /* Adjust button position */
+    .toggle-button {
+      top: 50%; /* Adjust the vertical position of the button */
+      left: 10%; /* Move the button to the left */
+      transform: translateX(0); /* Remove the centering transform */
+    }
+  }
+ /* Play button at the bottom with image */
+.play-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 80px; /* Position at the bottom of the banner */
+  left: 62%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the image */
+.play-button .play-icon {
+  width: 60px; /* Adjust the size of the image */
+  height: 60px; /* Adjust the size of the image */
+  object-fit: contain;
+}
+
+/* Optional: Add hover effect */
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.counter-container {
+  position: relative; /* Make this container the positioning reference */
+  margin-right: 20%;
+  margin-top: 10%;
+  text-align: right; /* Align content inside to the right */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in; /* Smooth fade effect */
+}
+
+.counter-container.visible {
+  opacity: 1; /* Show when "visible" class is added */
+}
+
+.counter {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.counter-description {
+  position: absolute; /* Position relative to the container */
+  right: 0; /* Align to the right edge */
+  top: 70px; /* Adjust spacing below the counter */
+  text-align: right;
+}
+
+.counter-description h3{
+  font-size: 15px;
+  color: gray; /* Set the text color */
+  margin: 0;
+  line-height: 1;
+ 
+}
+@media (max-width: 767px) {
+  .counter-container {
+    position: absolute; /* Fix the container in position */
+    top: 20%; /* Adjust top margin for better positioning */
+    left: 5%; /* Position it on the left side */
+    text-align: left; /* Align the text to the left */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 0; /* Remove top margin */
+    width: 90%; /* Use a wide width for smaller screens */
+  }
+
+  .counter {
+    font-size: 30px; /* Adjust font size for small screens */
+  }
+
+  .counter-description h3 {
+    font-size: 14px; /* Adjust font size for smaller text */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  /* Adjust the heading's position on small screens */
+  .counter-description {
+    position: relative; /* Remove absolute positioning */
+    text-align: left; /* Align text to the left */
+    left: 0; /* Ensure the text aligns with the counter */
+    top: 2px; /* Adjust the spacing */
+  }
+}
+
+
+  .navbar-toggler {
+    color: gray!important;
+    background-color: transparent; /* Transparent background */
+    border: none; /* No border */
+    font-size: 16px; /* Font size for "Menu" */
+    font-weight: bold; /* Bold text */
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .navbar-toggler:hover {
+    color: red; /* Hover effect */
+  }
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: black; /* White background for dropdown */
+      position: absolute; /* Position over content */
+      top: 50px; /* Adjust as needed */
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Ensure it is above other content */
+      padding: 20px; /* Space inside the box */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
+      min-height: 200px; /* Adjust height of the box */
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 10px 0; /* Space between items */
+    }
+  
+    .navbar-nav .nav-link {
+      color:white!important; /* Text color */
+      font-size: 18px; /* Font size */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      color: red !important; /* Hover effect */
+    }
+  
+    .navbar-toggler {
+      background-color: black; /* Black menu button */
+      color: white; /* White text */
+      border: 2px solid white; /* Optional: Border around the button */
+      font-size: 16px; /* Font size */
+      padding: 5px 10px; /* Padding for the button */
+    }
+  
+    /* Hide overflow content behind the menu */
+    .banner {
+      position: relative;
+    }
+  
+    .banner-content {
+      display: none; /* Hide content when the menu is open */
+    }
+  }
+  /*2nd div style
+  */
+  .content {
+    background: #fff;
+    height: 610x;
+    padding-top: 200px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .content h2 {
+    margin-top: 150px;
+    font-size: 55px;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  .content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    top: -50px;
+    left: 0;
+    background: #fff;
+    transform: skewY(4deg);
+  }
+  
+  .content::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 125px;
+    top: -50px;
+    right: 0;
+    background: #fff;
+    transform: skewY(-13deg);
+  } 
+  .rowseq{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start; /* Align text with icons */
+    gap: 100px; /* Adjust spacing between icons */
+    margin-top: 20px;
+  }
+  .content .col img{
+    width: 100px; /* Adjust icon size */
+    height: 100px;
+    object-fit: contain; /* Ensures proper scaling without distortion */
+    transition: transform 0.3s;
+  }
+  .head1 .welcome-heading {
+    color: black !important;
+    text-align: right;
+    padding-left: 130px;
+    font-size: 20px;
+  }
+  
+  .head1 .text-section1 {
+    color: gray;
+    text-align: right;
+  }
+  
+  .head1 .text-section {
+    text-align: left;
+    color: gray;
+  }
+  
+  .head1 .btn {
+    background-color: rgb(206, 39, 39);
+    color: white;
+  }
+  
+  /* For mobile screens (max-width: 768px) */
+  /* General Styles */
+  .head1 .btn {
+    background-color: rgb(206, 39, 39);
+    color: white;
+    padding-right: 80px; /* Add padding to the right */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+  }
+  
+.card {
+  width: 20rem !important;
+  height: 22rem !important;
+}
+.card img {
+  width: 100%; /* Image takes full width of the card */
+  height: 100%; /* Fill the height of the card */
+  object-fit: cover; /* Ensure the image covers the card area without distortion */
+}
+/* Mobile-Specific Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .custom-container {
+    padding-left: 0 !important; /* Remove left padding */
+    margin-left: 10px; /* Small margin from left */
+  }
+
+  .welcome-heading {
+    font-size: 24px; /* Adjust font size */
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    text-align: left !important; /* Align text to the left */
+    padding-left: 0 !important;
+    margin: 0 !important;
+    max-width: 50%;
+  }
+
+  .text-section1 {
+    text-align: justify !important; /* Justify text alignment */
+    margin-bottom: 15px; /* Add space below the section */
+    line-height: 1.6; 
+    max-width: 90%;/* Adjust line height for better readability */
+  }
+
+  .text-section {
+    text-align: justify !important;
+    max-width: 90%;
+     
+  }
+
+  .view-projects-button.btn {
+    display: block; /* Ensure the button behaves like a block element */
+    text-align: left !important; /* Align button text to the left */
+    margin-left: 10px !important; /* Add small margin from the left */
+    margin-top: 20px; /* Add space above the button */
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    width: auto; /* Keep width based on content */
+  }
+
+  /* Image Adjustments */
+  .card {
+    width: 100%; /* Card takes full width on small screens */
+    height: 100%; /* Height adjusts automatically on small screens */
+  }
+
+  .card img {
+    width: 100% !important; /* Image takes full width of its parent container */
+    height: 100%; /* Maintain aspect ratio on smaller screens */
+    object-fit: cover; /* Ensure image covers the container */
+  }
+}
+.custom-heading {
+  display: flex; /* Use flexbox to align the number and heading */
+  align-items: center; /* Vertically center the number and heading */
+  font-size: 24px; /* Set font size for the heading */
+  color: #333; /* Default heading color */
+  margin-bottom: 15px;
+  max-width: 70%; /* Space below the heading */
+}
+
+.heading-number {
+  font-size: 50px; /* Large font size for the number */
+  color: rgb(219, 45, 45); /* Red color for the number */
+  font-weight: bold; /* Make the number bold */
+  margin-right: 10px; /* Space between the number and the heading text */
+  text-decoration: underline rgb(202, 177, 177); /* Underline the number */
+}
+.custom-paragraph {
+  font-size: 18px; /* Increase font size for paragraphs */
+  color: gray; /* Change paragraph text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+  margin-top: 10px; /* Add space above the paragraph */
+  text-align: justify; /* Justify text alignment */
+}
+/* 3rd div */
+.v-shaped-div {
+  width: 100vw; /* Full screen width */
+  height: 4000px; /* Adjust height as needed */
+  background-color: #f4f4f4; /* Light gray background */
+  clip-path: polygon(0 4%, 35% 0, 100% 4%, 100% 100%, 0 100%);
+  position: relative; /* To allow absolute positioning of the image */
+  overflow: hidden; /* Ensures image doesn’t overflow outside the div */
+}
+.v-shaped-div h2 {
+  text-align: center; /* Centers the text horizontally */
+  padding-top: 160px; /* Adds top padding to move the h2 down from the top */
+  margin-top: 0;
+  font-size: 40px;
+  color: #000;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  z-index: 2; /* Ensures text appears above the image */
+}
+.image-container img {
+  width: 80%;
+  height: 40%;
+  border-radius: 10px;
+}
+
+.text-content h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.text-content p {
+  color: #6c757d;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-info .details {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.btn-view {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-view:hover {
+  background-color: #0056b3;
+}
+.row.align-items-center.mb-5 > [class*="col-"] {
+  padding-left: 10px; /* Adjust as needed */
+  padding-right: 10px; /* Adjust as needed */
+}
+@media (max-width: 768px) {
+  .v-shaped-div {
+    clip-path: polygon(0 2%, 35% 0, 100% 2%, 100% 100%, 0 100%);
+    width: 100vw; /* Full screen width */
+    height: 50px; /* Adjust height as needed */
+     /* Ensures image doesn’t overflow outside the div */
+  }
+  .image-container img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .row.align-items-center.mb-5 {
+    flex-wrap: wrap; /* Ensures content stacks properly if space is limited */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Full width for each column on small screens */
+    text-align: center; /* Center-align text for better appearance */
+  }
+
+  .text-content h3 {
+    font-size: 24px; /* Reduce heading size for smaller screens */
+  }
+
+  .text-content p {
+    max-width: 90%; /* Ensure text doesn't overflow */
+    margin: 0 auto; /* Center-align text */
+  }
+}
+@media (max-width: 484px) {
+  .image-container img {
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .row.align-items-center.mb-5 {
+    flex-wrap: wrap; /* Stack items if needed */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Ensure full width for columns */
+    text-align: center; /* Center text for better display */
+  }
+
+  .v-shaped-div {
+    height: 4100px; /* Automatically adjust height */
+    overflow: visible; /* Ensure content is not clipped */
+  }
+}
+
+
+/* 4th div style*/
+.v-shaped-div2 {
+  width: 100%;
+  height: 1200px;
+  background-color: white;
+  clip-path: polygon(0% 0%, 70% 10%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 300px;
+  z-index: 10;
+}
+
+.centered-heading {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[data-bs-slide-to] {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button[data-bs-slide-to].active {
+  background-color: black;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonial-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-details img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.details-text h5 {
+  margin: 0;
+  font-weight: bold;
+}
+.rectangle-image-container {
+  position: relative; /* Allows positioning of text over the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-cont {
+  position: absolute;
+  left: 20px; /* Adjust to control the text's position from the left */
+  top: 50%; /* Vertically center the text */
+  transform: translateY(-50%); /* Adjust for proper vertical centering */
+  color: white; /* Default text color for visibility on the image */
+  max-width: 50%; /* Restricts the text width */
+}
+
+.get-started {
+  color: red;
+  font-size: 16px; /* Normal font size */
+  margin: 0 0 10px 0;
+}
+
+.brief {
+  font-weight: bold;
+  font-size: 24px; /* Larger font size */
+  margin: 0 0 10px 0;
+}
+
+.descrip{
+  color: grey;
+  font-size: 16px; /* Same size as "Get Started" */
+  margin: 0;
+}
+
+.rectangle-image {
+  width: 1000px; /* Adjust the image size */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.get-started-btn {
+  display: inline-block;
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Add some padding for the button */
+  font-size: 16px; /* Button text size */
+  font-weight: bold; /* Make the text bold */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Add some space above the button */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+
+.get-started-btn:hover {
+  background-color: darkred; /* Darker red on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+@media (max-width: 766px) {
+  .v-shaped-div2 {
+   
+    clip-path: polygon(0% 0%, 70% 5%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: -800px;
+  
+  }
+  
+  
+  
+
+  .rectangle-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rectangle-image {
+    width: 100%; /* Full width */
+  }
+
+  .text-cont {
+    max-width: 100%;
+    left: 10%; /* Adjust text position */
+    top: 50%; 
+    justify-content: left;/* Center vertically */
+  }
+  .text-cont .descrip{
+    max-width: 90%;
+    justify-content:right;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  
+
+  .rectangle-image-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rectangle-image {
+    width: 100%;
+  }
+
+  .text-cont {
+    max-width: 100%;
+    left: 10%; /* Adjust text position */
+    top: 50%;
+  }
+}
+/*5th div style*/
+.v-shaped-section5 {
+  background-color: #f4f4f4; /* Background color */
+  height: 1000px; /* Height of the div */
+  clip-path: polygon(0 10%, 35% 0, 100% 10%, 100% 100%, 0 100%);
+  padding-top: 50px;
+}
+
+.recent-blog-heading {
+  font-size: 40px; /* Adjust font size */
+  text-align: center;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.item-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image-container1 img {
+  width: 100%;
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the area and crops excess */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.title-container {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.meta-container, .description-container {
+  color: #6c757d; /* Bootstrap's muted text color */
+}
+@media (max-width: 768px) {
+  .v-shaped-section5 {
+    clip-path: polygon(0 2%, 35% 0, 100% 2%, 100% 100%, 0 100%);
+    height: 2200px; /* Adjusted height for small screens only */
+  }
+}
+/*6th div*/
+.v-shaped-div6 {
+  width: 100%;
+  height: 500px; /* Adjust to fit content */
+  background-color: black;
+  clip-path: polygon(0% 0%, 70% 20%, 100% 5%, 100% 100%, 0% 100%);
+  margin-top: -120px;
+  padding-top: 100px;
+  color: gray;
+}
+
+.footer {
+  background-color: black; /* Keep the background black inside footer */
+  padding: 30px 0;
+  position: relative; /* Ensure it stays inside v-shaped div */
+  color: white; /* Text color */
+}
+
+.footer .container {
+  max-width: 1200px; /* Adjust based on your design */
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer .list-unstyled li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+  color: #fff;
+}
+
+.text-light {
+  color: #ccc !important; /* Ensure footer text stays light */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red; /* Heart color */
+}
+@media (max-width: 767px) {
+  .v-shaped-div6 {
+    height: auto;
+    margin-top:-90px;
+    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%); /* Allow the div height to adjust on small screens */
+     /* Reset margin-top to avoid overlap */
+  }
+
+  .footer {
+    padding: 20px 0;
+    margin-top: -20px; /* Add space between footer and content above */
+  }
+
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer h5 {
+    font-size: 16px;
+  }
+
+  .footer .list-unstyled li a {
+    font-size: 14px;
+  }
+
+  .footer .row {
+    text-align: center; /* Center footer content on smaller screens */
+  }
+
+  .footer .col-lg-3, .footer .col-md-6 {
+    margin-bottom: 20px;
+  }
+}

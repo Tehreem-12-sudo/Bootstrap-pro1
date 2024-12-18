@@ -1,0 +1,541 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+  
+  }
+  .About-1 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 700px; /* Adjust the height of the div as needed */
+    width: 100%; /* Sets the div to span the full width of the page */
+    
+}
+.about-text {
+    position: absolute;
+    top:50%; /* Distance from the bottom of the div */
+    left: 28%; /* Position 30% from the left */
+    font-family: Arial, sans-serif; /* Choose a clean font */
+    font-size: 18px; /* Adjust the text size */
+    color: gray; /* Default color for text */
+  }
+  
+  .separator {
+    color: red; /* Red color for the ">" */
+    margin: 0 5px; /* Space around the separator */
+  }
+  .Abouth{
+    position: absolute;
+    color:white;
+    top:55%;
+    left:28%;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    background-color: transparent; /* Transparent background for the navbar */
+  }
+  .navbar-brand{
+    font-weight: bold !important; 
+    top: 20px;
+    position: fixed !important;
+    color:red !important;
+    padding-left: 20%;
+  }
+  .item{
+    top: 20px;
+    position: fixed;
+   padding-left: 50%;
+  }
+  .item-1{
+    color:gray !important;
+    
+
+  }
+  .item-1:hover{
+    color:red!important;
+    
+
+  }
+  .about-text{
+    
+    position: relative;
+    top: 50%;
+    left: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: gray;
+    
+  }
+  .Abouth{
+    left: 30%;
+    position: relative;
+  }
+  /*2nd style*/
+.About-2{
+width: 100%;
+height: 2000px;
+background-color: white;
+clip-path: polygon(0% 0%, 70% 5%, 100% 0%, 100% 100%, 0% 100%);
+margin-top: -200px;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+padding-top: 300px;
+z-index: 10;
+}
+.About-2 h2 {
+    margin-top: 150px;
+    font-size: 55px;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+  }
+  /* Add spacing around images if needed */
+/* Custom image size */
+/* Custom image size */
+.custom-img {
+  width: 80px; /* Adjust the size of the images */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Optional: Style the text */
+p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px; /* Reduce space between the image and text */
+}
+
+/* Reduce column spacing */
+.row.g-1 {
+  --bs-gutter-x: 0.3rem; /* Horizontal gap between images */
+  --bs-gutter-y: 0.3rem; /* Vertical gap between images */
+}
+
+.content .col img{
+  width: 100px; /* Adjust icon size */
+  height: 100px;
+  object-fit: contain; /* Ensures proper scaling without distortion */
+  transition: transform 0.3s;
+}
+.head1 .welcome-heading {
+  color: black !important;
+  text-align: right;
+  padding-left: 130px;
+  font-size: 20px;
+}
+
+.head1 .text-section1 {
+  color: gray;
+  text-align: right;
+  font-size: 17px;
+}
+
+.head1 .text-section {
+  text-align: left;
+  color: gray;
+  font-size: 17px;
+}
+
+.head1 .btn {
+  background-color: rgb(206, 39, 39);
+  color: white;
+  padding: 5px 20px; /* Reduce padding to decrease the button size */
+  font-size: 14px; /* Optional: Adjust font size if needed */
+  border: none; /* Optional: Remove border if not required */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  display: inline-block; /* Keeps the button inline */
+  position: relative; /* Allows positioning */
+ right: 80px; /* Moves the button horizontally (adjust as needed) */
+}
+.card {
+width: 20rem !important;
+height: 22rem !important;
+}
+.card img {
+width: 100%; /* Image takes full width of the card */
+height: 100%; /* Fill the height of the card */
+object-fit: cover; /* Ensure the image covers the card area without distortion */
+} @media (max-width: 768px) {
+
+  .About-2{
+    
+    height: 3500px;
+    
+    clip-path: polygon(0% 0%, 70% 2%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .custom-container {
+    padding-left: 0 !important; /* Remove left padding */
+    margin-left: 10px; /* Small margin from left */
+  }
+
+  .welcome-heading {
+    font-size: 24px; /* Adjust font size */
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    text-align: left !important; /* Align text to the left */
+    padding-left: 0 !important;
+    margin: 0 !important;
+    max-width: 50%;
+  }
+
+  .text-section1 {
+    text-align: justify !important; /* Justify text alignment */
+    margin-bottom: 15px; /* Add space below the section */
+    line-height: 1.6; 
+    max-width: 90%;/* Adjust line height for better readability */
+  }
+
+  .text-section {
+    text-align: justify !important;
+    max-width: 90%;
+     
+  }
+
+  .view-projects-button.btn {
+    display: block; /* Ensure the button behaves like a block element */
+    text-align: left !important; /* Align button text to the left */
+    margin-left: 70px !important; /* Add small margin from the left */
+    margin-top: 20px; /* Add space above the button */
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    width: auto; /* Keep width based on content */
+  }
+
+  /* Image Adjustments */
+  .card {
+    width: 100%; /* Card takes full width on small screens */
+    height: 100%; /* Height adjusts automatically on small screens */
+  }
+
+  .card img {
+    width: 100% !important; /* Image takes full width of its parent container */
+    height: 100%; /* Maintain aspect ratio on smaller screens */
+    object-fit: cover; /* Ensure image covers the container */
+  }
+  .rectangle-image-container {
+    overflow: visible; /* Ensure text is not cut off */
+  }
+
+  .rectangle-image {
+    width: 100vw; /* Full screen width for smaller devices */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border-radius for full-width layout */
+  }
+
+  .text-cont {
+    margin-left: 32%; /* Adjust text alignment for smaller screens */
+    width: 90%; /* Ensure text fits inside the image */
+  }
+
+  .brief {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .descrip {
+    font-size: 14px;
+    max-width: 70%;
+    justify-content: end; /* Adjust font size for smaller screens */
+  }
+
+  .get-started-btn {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px;
+  }
+}
+
+.custom-heading {
+  display: flex; /* Use flexbox to align the number and heading */
+  align-items: center; /* Vertically center the number and heading */
+  font-size: 24px; /* Set font size for the heading */
+  color: #333; /* Default heading color */
+  margin-bottom: 15px;
+  max-width: 70%; /* Space below the heading */
+}
+
+.heading-number {
+  font-size: 50px; /* Large font size for the number */
+  color: rgb(219, 45, 45); /* Red color for the number */
+  font-weight: bold; /* Make the number bold */
+  margin-right: 10px; /* Space between the number and the heading text */
+  text-decoration: underline rgb(202, 177, 177); /* Underline the number */
+}
+.custom-paragraph {
+  font-size: 18px; /* Increase font size for paragraphs */
+  color: gray; /* Change paragraph text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+  margin-top: 10px; /* Add space above the paragraph */
+  text-align: justify; /* Justify text alignment */
+}
+.rectangle-image-container {
+  position: relative; /* Allows positioning of text over the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-cont {
+  position: absolute;
+  left: 20px; /* Adjust to control the text's position from the left */
+  top: 50%; /* Vertically center the text */
+  transform: translateY(-50%); /* Adjust for proper vertical centering */
+  color: white; /* Default text color for visibility on the image */
+  max-width: 50%; /* Restricts the text width */
+}
+
+.get-started {
+  color: red;
+  font-size: 16px; /* Normal font size */
+  margin: 0 0 10px 0;
+}
+
+.brief {
+  font-weight: bold;
+  font-size: 24px; /* Larger font size */
+  margin: 0 0 10px 0;
+}
+
+.descrip{
+  color: grey;
+  font-size: 16px; /* Same size as "Get Started" */
+  margin: 0;
+}
+
+.rectangle-image {
+  width: 1000px; /* Adjust the image size */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.get-started-btn {
+  display: inline-block;
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Add some padding for the button */
+  font-size: 16px; /* Button text size */
+  font-weight: bold; /* Make the text bold */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Add some space above the button */
+  text-transform: uppercase; /* Optional: Make the text uppercase */
+}
+
+.get-started-btn:hover {
+  background-color: darkred; /* Darker red on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+/*3RD DIV STYLE*/
+.About-3 {
+  width: 100vw; /* Full screen width */
+  height: 1500px; /* Adjust height as needed */
+  background-color: #f4f4f4; /* Light gray background */
+  clip-path: polygon(0 4%, 35% 0, 100% 4%, 100% 100%, 0 100%);
+  position: relative; /* To allow absolute positioning of the image */
+  overflow: hidden; /* Ensures image doesn’t overflow outside the div */
+}
+.About-3 h2 {
+  font-weight: bolder;
+  text-align: center; /* Centers the text horizontally */
+  padding-top: 160px; /* Adds top padding to move the h2 down from the top */
+  margin-top: 0;
+  font-size: 40px;
+  color: rgb(43, 38, 38);
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  z-index: 2; /* Ensures text appears above the image */
+}
+.team-img {
+  width: 250px; /* Set a specific width for the images */
+  height: 250px; /* Set a specific height for the images */
+   /* Add slight rounding to the images */
+  object-fit: cover; /* Ensures the image doesn't distort */
+  
+}
+
+
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+p1 {
+  font-size: 14px;
+  color: RED;
+}
+@media (max-width: 768px) {
+
+  .About-3{
+    
+    height: 4000px;
+    
+    clip-path: polygon(0% 0%, 70% 1%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+/*4th div*/
+.About-4{
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  clip-path: polygon(0% 0%, 70% 10%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 300px;
+  z-index: 10;
+}
+
+.centered-heading {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[data-bs-slide-to] {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+button[data-bs-slide-to].active {
+  background-color: black;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonial-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-details img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.details-text h5 {
+  margin: 0;
+  font-weight: bold;
+}
+/*5th div*/
+.footer {
+  height: 600px;
+  background-color: black; 
+  clip-path: polygon(0% 0%, 70% 20%, 100% 5%, 100% 100%, 0% 100%);/* Keep the background black inside footer */
+  position: relative; /* Ensure it stays inside v-shaped div */
+  color: white; /* Text color */
+  padding-top: 200px;
+}
+
+.footer .container {
+  max-width: 1200px; /* Adjust based on your design */
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer .list-unstyled li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+  color: #fff;
+}
+
+.text-light {
+  color: #ccc !important; /* Ensure footer text stays light */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red; /* Heart color */
+}
+@media (max-width: 767px) {
+  .footer {
+    height: auto;
+    padding-top: 100px;
+    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+     /* Allow the div height to adjust on small screens */
+     /* Reset margin-top to avoid overlap */
+  }
+
+  
+
+  .footer .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer h5 {
+    font-size: 16px;
+  }
+
+  .footer .list-unstyled li a {
+    font-size: 14px;
+  }
+
+  .footer .row {
+    text-align: center; /* Center footer content on smaller screens */
+  }
+
+  .footer .col-lg-3, .footer .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
