@@ -126,15 +126,17 @@ html, body {
     
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 15%;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: gray;
     
   }
   .Abouth{
-    left: 30%;
+    left: 15%;
     position: relative;
+    top:50%;
+    font-size: 20px;
   }
   /*2nd style*/
 .About-2{
@@ -227,10 +229,10 @@ object-fit: cover; /* Ensure the image covers the card area without distortion *
 } @media (max-width: 768px) {
 
   .About-2{
-    
+    clip-path: none;
     height: 3500px;
     
-    clip-path: polygon(0% 0%, 70% 2%, 100% 0%, 100% 100%, 0% 100%);
+    
   }
   .custom-container {
     padding-left: 0 !important; /* Remove left padding */
