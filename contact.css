@@ -16,28 +16,7 @@ html, body {
     width: 100%; /* Sets the div to span the full width of the page */
     
 }
-.contact-text {
-    position: absolute;
-    top:50%; /* Distance from the bottom of the div */
-    left: 28%; /* Position 30% from the left */
-    font-family: Arial, sans-serif; /* Choose a clean font */
-    font-size: 18px; /* Adjust the text size */
-    color: gray; /* Default color for text */
-  }
-  
-  .separator {
-    color: red; /* Red color for the ">" */
-    margin: 0 5px; /* Space around the separator */
-  }
-  .contacth{
-    position: absolute;
-    color:white;
-    top:55%;
-    left:28%;
-    font-family: Arial, sans-serif; 
-    font-weight: bold;
 
-  }
 .navbar {
     position: fixed;
     top: 0;
@@ -72,15 +51,23 @@ html, body {
     
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 15%;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: gray;
     
   }
+  .separator {
+    color: red; /* Red color for the ">" */
+    margin: 0 5px; /* Space around the separator */
+  }
   .contacth{
-    left: 30%;
+    left: 15%;
     position: relative;
+    top: 50%;
+    color: white;
+    font-weight: bold;
+
   }
   .navbar-toggler {
     color: gray!important;
@@ -154,7 +141,7 @@ html, body {
 }
 @media (max-width: 768px) {
   .Contact-2 {
-    
+    clip-path: none;
     height: 1200px;
     /* Adjusted height for small screens only */
   }
@@ -228,7 +215,7 @@ html, body {
       
     height: auto;
     padding-top: 100px;
-    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+   clip-path: none;
      /* Allow the div height to adjust on small screens */
      /* Reset margin-top to avoid overlap */
   }

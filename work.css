@@ -72,15 +72,16 @@ html, body {
     
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 15%;
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: gray;
     
   }
   .workh{
-    left: 30%;
+    left: 15%;
     position: relative;
+    top:50%;
   }
   .navbar-toggler {
     color: gray!important;
@@ -211,7 +212,7 @@ html, body {
       }
       @media (max-width: 768px) {
         .Work-2 {
-          clip-path: polygon(0 2%, 35% 0, 100% 2%, 100% 100%, 0 100%);
+          clip-path: none;
           width: 100vw; /* Full screen width */
           height: 50px; /* Adjust height as needed */
            /* Ensures image doesn’t overflow outside the div */
@@ -306,7 +307,7 @@ html, body {
         .footer {
           height: auto;
           padding-top: 100px;
-          clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+          clip-path: none;
            /* Allow the div height to adjust on small screens */
            /* Reset margin-top to avoid overlap */
         }

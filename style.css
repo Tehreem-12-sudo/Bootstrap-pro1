@@ -844,7 +844,7 @@ button[data-bs-slide-to].active {
   .v-shaped-div6 {
     height: auto;
     margin-top:-90px;
-    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%); /* Allow the div height to adjust on small screens */
+    clip-path:none;/* Allow the div height to adjust on small screens */
      /* Reset margin-top to avoid overlap */
   }
 

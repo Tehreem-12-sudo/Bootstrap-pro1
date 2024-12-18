@@ -34,6 +34,7 @@ html, body {
     color:white;
     top:55%;
     left:28%;
+    font-size: 22px;
     font-family: Arial, sans-serif; 
     font-weight: bold;
 
@@ -567,7 +568,7 @@ button[data-bs-slide-to].active {
   .footer {
     height: auto;
     padding-top: 100px;
-    clip-path: polygon(0% 5%, 70% 9%, 100% 5%, 100% 100%, 0% 100%);
+    clip-path: none;
      /* Allow the div height to adjust on small screens */
      /* Reset margin-top to avoid overlap */
   }
